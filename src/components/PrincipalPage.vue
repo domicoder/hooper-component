@@ -19,7 +19,7 @@
 
     <h1>{{ beach1 }}</h1>
 
-    <hooper group="group1" infiniteScroll="true" :centerMode="true" style="height: 400px">
+    <hooper group="group1" :infiniteScroll="true" :centerMode="true" style="height: 400px">
       <slide v-for="(item, i) in items" :key="i">
         <v-img :src="item.src" class="my-3" contain height="400" />
       </slide>
@@ -27,7 +27,7 @@
       <hooper-navigation slot="hooper-addons"></hooper-navigation>
       <pagination-hooper-navigation style="background:rgba(0,0,0, 0.17);border-radius:20px;" slot="hooper-addons"></pagination-hooper-navigation>
     </hooper>
-    <hooper group="group1" infiniteScroll="true" :itemsToShow="4" >
+    <hooper group="group1" :infiniteScroll="true" :itemsToShow="4" >
       <slide v-for="(item, i) in items" :key="i">
         <v-img :src="item.src" class="my-3" contain />
       </slide>
@@ -35,7 +35,7 @@
 
     <h1 class="mt-5">{{ beach2 }}</h1>
 
-    <hooper group="group2" infiniteScroll="true" :centerMode="true" style="height: 400px">
+    <hooper group="group2" :infiniteScroll="true" :centerMode="true" style="height: 400px">
       <slide v-for="(item, i) in items2" :key="i">
         <v-img :src="item.src" class="my-3" contain height="400" />
       </slide>
@@ -43,7 +43,7 @@
       <hooper-navigation slot="hooper-addons"></hooper-navigation>
       <pagination-hooper-navigation style="background:rgba(0,0,0, 0.17);border-radius:20px;" slot="hooper-addons"></pagination-hooper-navigation>
     </hooper>
-    <hooper group="group2" infiniteScroll="true" :itemsToShow="4">
+    <hooper group="group2" :infiniteScroll="true" :itemsToShow="4">
       <slide v-for="(item, i) in items2" :key="i">
         <v-img :src="item.src" class="my-3" contain />
       </slide>
