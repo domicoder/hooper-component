@@ -2,12 +2,7 @@
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
-        <v-img
-          :src="require('../assets/home_logo.jpeg')"
-          class="my-3"
-          contain
-          height="200"
-        />
+        <v-img :src="require('../assets/home_logo.jpeg')" class="my-3" contain height="200"/>
       </v-col>
 
       <v-col class="mb-4">
